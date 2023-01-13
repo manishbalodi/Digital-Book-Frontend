@@ -1,0 +1,42 @@
+<div class="outer" >
+    <form  [formGroup]="loginFormData" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">User Name</label>
+            <input
+              type="text"
+              id="userName"
+              class="form-control"
+              formControlName="userName"
+            />
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Password</label>
+            <input
+              type="password"
+              id="userPassword"
+              class="form-control"
+              formControlName="userPassword"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col=xs-12">
+            <button type="submit" [disabled]=!loginFormData.valid class="btn btn-success " >Login</button>
+        </div>
+    </div>
+    <div id="warning" class="row" *ngIf="areDetailsFine == false">
+      <div class="col=xs-12">
+        <P>UserName or Password Incorrect</P>
+      </div>
+    </div>
+    </form>
+    </div>

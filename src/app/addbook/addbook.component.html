@@ -1,0 +1,114 @@
+<div class="outer" >
+    <form  [formGroup]="addBookData" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col=xs-12">
+              <div class="form-group">
+                <label for="name">Topic</label>
+                <input
+                  type="text"
+                  id="bookTitle"
+                  class="form-control"
+                  formControlName="bookTitle"
+                />
+              </div>
+            </div>
+      </div>
+        
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Logo(Url)</label>
+            <input
+              type="text"
+              id="bookLogo"
+              class="form-control"
+              formControlName="bookLogo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Category</label>
+            <input
+              type="text"
+              id="bookCategory"
+              class="form-control"
+              formControlName="bookCategory"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Price</label>
+            <input
+              type="number"
+              id="bookPrice"
+              class="form-control"
+              formControlName="bookPrice"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Author Name</label>
+            <input
+              type="text"
+              id="bookAuthor"
+              class="form-control"
+              formControlName="bookAuthor"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Publisher</label>
+            <input
+              type="text"
+              id="bookPublisher"
+              class="form-control"
+              formControlName="bookPublisher"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Content</label>
+            <textarea
+              type=""
+              id="content"
+              class="form-control"
+              formControlName="content"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+        
+      
+      <div class="row">
+        <div class="col=xs-12">
+            <button type="submit" [disabled]=!addBookData.valid class="btn btn-success " >Add</button>
+        </div>
+    </div>
+    <!-- <div id="warning" class="row" *ngIf="areDetailsFine == false">
+      <div class="col=xs-12">
+        <P>UserName or Password Incorrect</P>
+      </div>
+    </div> -->
+    </form>
+    </div>

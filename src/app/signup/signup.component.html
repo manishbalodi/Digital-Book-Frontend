@@ -1,0 +1,85 @@
+<div class="outer" >
+    <form  [formGroup]="registrationFormData" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">User Name</label>
+            <input
+              type="text"
+              id="userName"
+              class="form-control"
+              formControlName="userName"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">First Name</label>
+            <input
+              type="text"
+              id="userFirstName"
+              class="form-control"
+              formControlName="userFirstName"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Last Name</label>
+            <input
+              type="text"
+              id="userLastName"
+              class="form-control"
+              formControlName="userLastName"
+            />
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label for="name">Password</label>
+            <input
+              type="password"
+              id="userPassword"
+              class="form-control"
+              formControlName="userPassword"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=xs-12">
+          <div class="form-group">
+            <label>
+              <input type="radio" value="READER" formControlName="role">
+                <span>Reader</span>
+            </label>
+            <label>
+              <input type="radio" value="AUTHOR" formControlName="role">
+                <span>Author</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col=xs-12">
+            <button type="submit" [disabled]=!registrationFormData.valid class="btn btn-success " >Sign-Up</button>
+        </div>
+    </div>
+    <div id="warning" class="row" *ngIf="anyIssue == true">
+      <div class="col=xs-12">
+        <P>UserName already exists</P>
+      </div>
+    </div>
+    </form>
+    </div>

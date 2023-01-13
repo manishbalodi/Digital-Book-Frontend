@@ -1,0 +1,25 @@
+.navbar-brand {
+    margin-left: 50px;
+}
+.collapse {
+    margin-left: 300px;
+}
+.nav-item {
+    margin-left: 50px;
+}
+.cart{
+    margin-left: 330px;
+}
+.navbar{
+    background: transparent;
+    background-color:cadetblue;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+/* .bg-color{
+    background-color:rgb(26, 123, 153);
+} */
+.textc{
+    text-emphasis-color: rgb(104, 196, 141);
+}

@@ -1,0 +1,13 @@
+.outer{
+    margin-left: 450px;
+    /* background-image: url("https://t4.ftcdn.net/jpg/01/65/98/53/240_F_165985319_GPU5ALSAgJkkJ0rRE2V1d8plcen3aANg.jpg"); */
+   /* height: 100%;
+   width: 100%; */
+}
+.warning{
+    margin-top: 50px;
+}
+P{
+    margin-top: 20px;
+    color: red;
+}
